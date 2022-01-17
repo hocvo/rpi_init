@@ -10,6 +10,8 @@ network={
      psk="password"
      key_mgmt=WPA-PSK
 }
+default user = pi
+
 
 ubuntu OS:
 modify network-config file to setup network
