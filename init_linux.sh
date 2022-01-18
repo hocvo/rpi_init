@@ -7,6 +7,7 @@ if [[ $? -ne 0 ]]; then
 fi
 sudo apt upgrade -y
 sudo apt install -y git
+sudo apt install -y vim
 
 git config --global alias.co checkout
 git config --global alias.br branch
@@ -18,8 +19,8 @@ git config --global alias.logss "log --all --graph --date=format:'%b-%d-%y' --pr
 git config --global alias.cp cherry-pick
 git config --global user.email "chohocvo@gmail.com"
 git config --global user.name "Hoc Vo"
+git config --global core.editor vim
 
-sudo apt install -y vim
 #git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 mv ~/.bashrc ~/.bashrc.old
 cp bashrc ~/.bashrc

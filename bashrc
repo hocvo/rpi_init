@@ -116,3 +116,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+#Full color spectrum at https://www.ditig.com/256-colors-cheat-sheet
+export PS1="\[\033[38;5;93m\]\u@\h \[\033[38;5;2m\]\w\[\033[38;5;3m\]\$(parse_git_branch)\[\033[00m\] $ "
