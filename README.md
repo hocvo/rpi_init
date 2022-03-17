@@ -17,3 +17,12 @@ NOTE country seems to block the network until the is config in raspi-config. Mig
 ubuntu OS:
 modify network-config file to setup network
 the first boot will fail and require reboot. Therefore need monitor and keyboard before actual ssh
+
+Additional GDB GEF layout:
+bash -c "$(curl -fsSL http://gef.blah.cat/sh)"
+
+Oh-My-ZSH:
+sudo apt -y install zsh
+echo $SHELL
+chsh -s $(which zsh) 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
