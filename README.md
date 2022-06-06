@@ -15,6 +15,10 @@ network={
 default user is "pi". Password is "raspberry"
 - NOTE country seems to block the network until the is config in raspi-config. Might not need to set country in the wpa_supplicant
 
+REMOTE DESKTOP:
+``` bash
+sudo apt install xrdp
+```
 
 ## ubuntu OS:
 - modify network-config file to setup network
